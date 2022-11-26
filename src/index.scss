@@ -1,0 +1,72 @@
+@import '../node_modules/modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  /* Colors: */
+  --primaryColor: #000000;
+  --secondaryDarkColor: #040506;
+  --secondaryColor: #FFFFFF;
+  --accentColor: #FFCC48;
+
+  /* Colors with opacity */
+  --primaryColorWithOpacity: #00000045;
+  --secondaryColorWithOpacity: #ffffff40;
+  
+  /* Font/text values */
+  --mainFont: 'Poppins', sans-serif;
+  --mainFontStyle: normal;
+  --fontWeightBold: bold;
+  --fontWeightNormal: normal;
+  --fontSize18: 18px;
+  --fontSize28: 28px;
+  --fontSize48: 48px;
+  --fontSize65: 65px;
+  --charSpacing0: 0px;
+  --lineSpacing28: 28px;
+  --lineSpacing38: 38px;
+  --lineSpacing72: 72px;
+  --lineSpacing75: 75px;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: var(--mainFont);
+  font-style: var(--mainFontStyle);
+  font-weight: var(--fontWeightNormal);
+  font-size: var(--fontSize18);
+  letter-spacing: var(--charSpacing0);
+  color: var(--secondaryDarkColor);
+}
+  
+h1, h2, h3, h4 {
+  font-weight: var(--fontWeightBold);
+  letter-spacing: var(--charSpacing0);
+  color: var(--primaryColor);
+}
+
+h1 {
+  font-size: var(--fontSize65);
+  line-height: var(--lineSpacing75);
+}
+
+h2 {
+  font-size: var(--fontSize48);
+  line-height: var(--lineSpacing72);
+}
+
+h3 {
+  font-size: var(--fontSize28);
+  line-height: var(--lineSpacing38);
+}
+
+h4 {
+  font-size: var(--fontSize18);
+  line-height: var(--lineSpacing28);
+}
+
+button {
+  cursor: pointer;
+}
