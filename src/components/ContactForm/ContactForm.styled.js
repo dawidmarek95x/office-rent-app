@@ -90,7 +90,8 @@ export const Div = styled.div`
       background-size: 200%;
       transition: 300ms ease-out;
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-position: left;
         color: var(--primaryColor);
       }

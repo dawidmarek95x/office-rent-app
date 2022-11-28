@@ -9,7 +9,7 @@ const offers = [
         <p>od 1000 zł/msc</p>
       </>
     ),
-    bgImage: require("../images/offers/01-OfferBg@2x.jpg"),
+    bgImage: require("../images/offers/01-OfferBg.jpg"),
     bgImageLarge: require("../images/offers/01-OfferBg@2x.jpg"),
   },
   {
