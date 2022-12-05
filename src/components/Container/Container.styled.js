@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Div = styled.div`
   width: 100%;
-  padding: 0 20px;
   margin: 0 auto;
+  padding: 0 20px;
 
   @media screen and (min-width: 768px) {
     padding: 0 40px;

@@ -9,17 +9,19 @@ import MoreInfoBtn from "../MoreInfoBtn/MoreInfoBtn";
 import { ContentWrapper } from "./BenefitsSection.styled";
 
 const BenefitsSection = () => {
+  const listOfBenefits = benefits.map((b) => (
+    <Benefit key={b.id} iconSrc={b.iconSrc}>
+      {b.content}
+    </Benefit>
+  ));
+
   return (
     <SectionWrapper>
       <Container>
         <ContentWrapper>
           <BenefitsGrid>
             <BenefitsHeader>Lorem ipsum dolor sit amet, conse</BenefitsHeader>
-            {benefits.map((b) => (
-              <Benefit key={b.id} iconSrc={b.iconSrc}>
-                {b.content}
-              </Benefit>
-            ))}
+            {listOfBenefits}
           </BenefitsGrid>
           <MoreInfoBtn>Dowiedz się więcej</MoreInfoBtn>
         </ContentWrapper>

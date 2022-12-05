@@ -7,15 +7,22 @@ import SectionWrapper from "../SectionWrapper/SectionWrapper";
 import offers from "../../data/offers";
 
 const OffersSection = () => {
+  const cardListWithOffers = offers.map((offer) => (
+    <OfferCard
+      key={offer.id}
+      bgImage={offer.bgImage}
+      bgImageLarge={offer.bgImageLarge}
+      position={offer.position}
+    >
+      <Offer content={offer.content} />
+    </OfferCard>
+  ));
+
   return (
     <SectionWrapper>
       <Container>
         <OffersList>
-          {offers.map((offer) => (
-            <OfferCard key={offer.id} bgImage={offer.bgImage} bgImageLarge={offer.bgImageLarge} position={offer.position}>
-              <Offer content={offer.content} />
-            </OfferCard>
-          ))}
+          {cardListWithOffers}
         </OffersList>
       </Container>
     </SectionWrapper>
